@@ -175,7 +175,7 @@ myMotor2.run(Adafruit_MotorHAT.RELEASE)
 while(1):
     ret, frame = video_capture.read()
     #cv2.imshow('frame', frame)
-    crop_img = frame[650:720, 0:320]
+    crop_img = frame[500:630, 120:460]
     gray = cv2.cvtColor(crop_img, cv2.COLOR_BGR2GRAY)
     #gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     blur = cv2.GaussianBlur(gray, (5, 5), 0)
